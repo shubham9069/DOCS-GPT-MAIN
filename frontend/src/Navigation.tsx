@@ -45,7 +45,7 @@ export default function Navigation({
   console.log(isSelectedDocsSet)
   
   const [selectedDocsModalState, setSelectedDocsModalState] =
-    useState<ActiveState>(!isSelectedDocsSet ? 'INACTIVE' : 'ACTIVE');   //! ad this to disable modell
+    useState<ActiveState>(isSelectedDocsSet ? 'INACTIVE' : 'ACTIVE');   
 
   const [uploadModalState, setUploadModalState] =
     useState<ActiveState>('INACTIVE');
